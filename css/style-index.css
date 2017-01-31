@@ -1,0 +1,124 @@
+        
+         @media only screen and (max-width: 1233px){
+            #r3{
+                background-image: url(../images/concert-2-1233px.jpg);
+            }
+        }
+
+         @media only screen and (max-width: 925px){
+            #r3{
+                background-image: url(../images/concert-2-925px.jpg);
+            }
+
+             .gallery-images {
+                width: 50%;
+             }
+             
+             .col-m-0{ width: 0%; padding: 0px;}
+             .col-m-1{width: 16.66%;}
+             .col-m-2{width: 16.66%;}
+             .col-m-3{width: 25%;}
+             .col-m-4{width: 33.33%;}
+             .col-m-5{width: 41.66%;}
+             .col-m-6{width: 50%;}
+             .col-m-7{width: 58.33%;}
+             .col-m-8{width: 66.66%;}
+             .col-m-9{width: 75%;}
+             .col-m-10{width: 83.33%;}
+             .col-m-11{width: 91.66%;}
+             .col-m-12{width: 100%;}
+
+            .omit{
+                display: none; 
+            }
+
+            #ad{
+                width: 100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px){
+
+
+            #hero{
+                background-image: url(../images/ellie-pink-small.jpg);
+            }
+
+            #hero_text{
+                left:10%;
+            }
+        }
+
+        
+
+        @media only screen and (max-width: 650px){
+            [class*="col-"]{
+                width: 100%;
+            }
+
+
+            #hero_text span{
+                font-size: 1.7em;
+            }
+
+            #black_box2 h1{
+                margin-top: 20px;
+            }
+
+            #r3{
+                padding: 0px;
+            }
+
+            .events{
+                left: 20%;
+                text-align: left;
+            }
+
+            .date{
+                padding: 20px;
+                font-size: 2em;
+            }
+
+            .venue{
+                padding: 10px 15px 10px 5px;
+                font-size: 1em;
+            }
+
+            #black_box1{
+                text-align: center;
+            }
+
+            #black_box1 img{
+                margin-top: 20px;
+                width: 80%
+            }
+
+            #ad{
+                height: 80px;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 510px){
+            #hero_text{
+                left:25px;
+                width: 260px;
+            }
+
+            #r3{
+                background-image: url(../images/concert-2-510px.jpg);
+            }
+
+            .events{
+                left: 5px;
+            }
+            .date{
+                font-size: 1.3em;
+            }
+            .venue{
+                padding-right: 0px; 
+                }        
+        }
+

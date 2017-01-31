@@ -1,0 +1,325 @@
+
+       @font-face{
+        	font-family: raleway;
+        	src:url(../fonts/raleway-regular.ttf);
+        }
+
+        @font-face{
+        	font-family: raleway;
+        	src:url(../fonts/raleway-thin.ttf);
+        	font-weight: 100;
+        }
+
+        @font-face{
+        	font-family: raleway;
+        	src:url(../fonts/raleway-light.ttf);
+        	font-weight: 200;
+        }
+
+
+        @font-face{
+        	font-family: roboto;
+        	src:url(../fonts/roboto-regular.ttf);
+        }
+
+        
+
+        @font-face{
+        	font-family: roboto;
+        	src:url(../fonts/roboto-thin.ttf);
+        	font-weight: 100;
+        }
+
+         @font-face{
+        	font-family: roboto;
+        	src:url(../fonts/roboto-light.ttf);
+        	font-weight: 200;
+        }
+
+ 		@font-face{
+        	font-family: roboto;
+        	src:url(../fonts/roboto-medium.ttf);
+        	font-weight: bold;
+        }
+
+        @font-face{
+        	font-family: "vonique 64";
+        	src:url('../fonts/vonique 64.ttf');
+        }
+
+
+       @keyframes shake{
+            0%{
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+
+            }
+            20%{
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+            }
+            40%{
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+            }
+            60%{
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+                    transform:rotate(5deg);
+            }
+            80%{
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+                    transform:rotate(-5deg);
+            }
+            100%{
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+                    transform:rotate(0deg);
+            }
+
+
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 100%;
+            background-image: url(../images/a.png);
+            /*background-color: #000;*/
+        }
+
+        *{
+            box-sizing:border-box;
+        }
+
+        [class*="col-"]{
+            padding: 15px;
+            float: left;
+           }
+
+        .rows:after{
+            content:"";
+            clear: both;
+            display: block;
+        }
+
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+
+        #header{
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            height: 82px;
+            text-align: center;
+            background-color: rgb(223, 32, 8);
+            z-index: 20;
+        }
+
+
+        #header p{
+            margin: 10px 0px 10px 0px;
+            display: inline-block;
+            font-family: raleway;
+            color:  #fff;
+            font-weight: bold;
+            font-size: 2.8em;
+            background-image: url(../images/logo.png);
+            height:60px;
+            width: 450px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+
+
+
+        #nav_button{
+            position:absolute;
+            display: block;
+            top:13px;
+            left:40px;
+            width:50px;
+            height: 56px;
+            text-align: center;
+            padding: 0px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        #nav_button div{
+            position: absolute;
+            width: 35px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin: 0px 0px 0px 7px; 
+            padding: 0px;
+            transition: all 0.5s ease;
+        }
+
+
+
+        #nav_button:hover{
+            animation-name:shake;
+            animation-duration:0.3s;
+        }
+
+        #nav_button:hover div{
+            animation : bar_size 0.3s;
+        }
+
+
+
+        #trans_bg{
+            position: fixed;
+            top:0px;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+            cursor: pointer;
+            display: none;
+            z-index: 4;
+            transition:all 0.3s ease;
+        }
+
+
+        #menu{
+            position: fixed;
+            top:82px;
+            left: -400px;
+            height: 100%;
+            width:300px;
+            overflow: auto; 
+            z-index: 10;
+            background-color: #fff;
+            transition:all 0.3s ease;
+        }
+
+        #menu ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            /*border: 1px #151515 solid;*/
+        }
+
+        #menu ul li{
+            text-align: center;
+        }
+
+        #menu ul a{
+            display:block;
+            padding:20px 0px 20px 0px;
+            text-decoration: none;
+            color: #454545;
+            font-family: roboto;
+            font-weight:100; 
+            font-size: 2.4em;
+            transition:all 0.3s ease;
+        }
+
+        #menu ul a:hover{
+            background-color:rgb(223,32,8); 
+            color: #fff;
+        }
+
+        
+
+        h1{
+            font-family: "vonique 64";
+            font-size: 2.6em;
+        }
+
+
+        .button{
+            position: absolute;
+        }
+
+        .button a{
+            padding: 15px;
+            font-family: roboto;
+            /*font-weight: 200;*/
+            font-size: 1.4em;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+ 
+
+        .footer{
+            position: relative;
+            width:100%;
+            height:150px;
+            background-color: rgb(10, 10, 10);
+            border-top: 2px solid #252525;
+            text-align: center;
+        }
+
+        .footer p{
+            color: #f0f0f0;
+            font-family: raleway;
+            font-size: 1em;
+            margin-top: 20px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+
+         @media only screen and (max-width:768px){
+
+            #header p{
+                display: none;
+            }
+
+            #logo_small {
+                position: absolute;
+                top:8px;
+                height: 60px;
+                width: 100%;
+                background: url('../images/Logo-Ellie.png');
+                background-size: contain;
+                background-position: 55%;
+                background-repeat: no-repeat;
+            }
+         }
+
+        @media only screen and (max-width: 510px){
+
+            #menu ul{
+                min-height: 500px;
+            }
+
+            #menu ul a{
+                font-size: 1.3em;
+            }
+
+        }

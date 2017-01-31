@@ -1,0 +1,168 @@
+  
+  #r1{
+  	position: relative;
+  	top:100px;
+  }
+
+  #r2{
+  	position: relative;
+  	top:120px;
+  	height: 330px;
+  }
+
+  #player_container{
+  	position: relative;
+  	padding: 0px;
+  	height: 100%;
+  	background-color: #fff;
+  }
+
+  #cover{
+  	height: 300px;
+  	width: 100%;
+  }
+
+  #player{
+  	height: 26px;
+  	width: 100%;
+  }
+
+  #left{
+  	position: absolute;
+  	display: inline-block;
+  	padding: 10px;
+  	background-color: rgba(0,0,0, 0.5);
+  	top:130px;
+  	font-size: 3em;
+  	color:#fff;
+  	border-left: 5px solid #ff0000;
+  	cursor: pointer;
+  }
+
+  #right{
+  	position: absolute;
+  	display: inline-block;
+  	padding: 10px;
+  	background-color: rgba(0,0,0, 0.5);
+  	top:130px;
+  	right: 0px;
+  	font-size: 3em;
+  	color:#fff;
+  	border-right: 5px solid #ff0000;
+  	cursor: pointer;
+  }
+
+  #playlist{
+  	padding: 0px;
+  	height: 330px;
+  	background-color: #222;
+  }
+
+  .track_name{
+  	height:66px;
+  	padding:10px 0px 20px 20px;
+  	font-size: 2em;
+  	font-family: roboto;
+  	font-weight: 200;
+  	color: #eee;
+  	border-bottom: 1px solid #666;
+    transition: all 0.4s ease;
+  }
+
+
+  #burn{
+    background-color: rgb(223, 32, 8);
+    color: #eee;
+  }
+
+
+  #r3{
+    position: relative;
+    top:200px;
+  }
+
+  #songbox{
+    background-color: #fff;
+    height: 300px;
+    overflow: auto;
+  }
+
+  #songbox ul{
+    display: block;
+    margin: 20px 20px 20px 20px;
+    padding: 0px;
+  }
+
+  #songbox ul li{
+    display: inline-block;
+    font-family: roboto;
+    font-weight: 200;
+    color: #757575;
+    margin: 1px;
+    width: 5.5%;
+    min-width: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+  }
+
+  #songbox ul li:hover{
+    transform:scale(1.1, 1.1);
+  }
+
+  #display{
+    display: block;
+    float: left;
+    margin: 20px;
+    width:93.5%;
+    text-align: center;
+    font-family: raleway;
+    font-size: 1.2em;
+    color: #707070;
+  }
+
+  .footer{
+    top:250px;
+  }
+
+  @media only screen and (max-width:768px){
+
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;}
+
+        .omit{
+        	width: 0px;
+        	padding: 0px;
+        }
+  }
+
+  @media only screen and (max-width: 670px){
+  	[class*="col-"]{
+  		width: 100%
+  	}
+
+  	.omit{
+  		width: 0px;
+  	}
+
+  	.track_name{
+  		font-size: 1.8em;
+  	}
+  }

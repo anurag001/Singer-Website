@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ellie Goulding - Listen</title>
+      <link rel="stylesheet" type="text/css" href="./css/style.css" />
+      <link rel="stylesheet" type="text/css" href="./css/style-listen.css" />
+      <script type="text/javascript" src="./scripts/main.js"></script>
+      <script type="text/javascript" src="./scripts/play.js"></script>
+      <script type="text/javascript" src="./scripts/songbox.js"></script>
+    </head>
+
+    <body>
+
+      <!--HEADER GOES HERE-->
+
+      <div id="header">
+        <div id="nav_button" onclick="myFunc()">
+            <div style="top:10px;" id="1"></div>
+            <div style="top:25px;" id="2"></div>
+            <div style="top:40px;" id="3"></div>
+        </div>
+        <p></p>
+         <div id="logo_small"></div>
+      </div>
+
+      <!--NAVIGATION MENU-->
+
+       <div id="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" >The Person</a></li>
+          <li><a href="./listen.html" >Listen</a></li>
+          <li><a href="./dates.html" >Tour Dates</a></li>
+          <li><a href="./gallery.html" >Gallery</a></li>
+        </ul>
+      </div>
+      <div id="trans_bg" onclick="myFunc()"></div>
+
+      <!--HEADING HERE-->
+
+      <div class="rows" id="r1">
+        <div class="col-2"></div>
+        <div class="col-10"><h1 style="color:#fff; margin:5px;">LISTEN</h1></div>
+      </div>
+
+      <!--PLAYER HERE-->
+
+      <div class="rows" id="r2">
+        <div class="col-1 omit"></div>
+        <div class="col-4 col-m-6" id="player_container">
+          <div id="left" onclick="left()">&laquo;</div>
+          <div id="right" onclick="right()">&raquo;</div>
+          <img src="./images/cover/burn.jpg" alt="" id="cover"/>
+          <audio controls autoplay id="player">
+          	<source src="./songs/burn.mp3" type="audio/mpeg" id="track" />
+          </audio>
+        </div>
+        <div class="col-6 col-m-6" id="playlist">
+        	<div class="track_name" id="burn">Burn</div>
+        	<div class="track_name" id="lmlyd">Love Me Like You Do</div>
+        	<div class="track_name" id="beatheart">Beating Heart</div>
+        	<div class="track_name" id="army">Army</div>
+        	<div class="track_name" id="gracious">Goodness Gracious</div>
+        </div>
+        <div class="col-1 omit"></div>
+      </div>
+
+      <!--SONGBOX HERE-->
+
+      <div class="rows" id="r3">
+        <div class="col-1 omit"></div>
+        <div class="col-10" id="songbox">
+          <ul>
+            <li id="a" onclick="funcA()" >A</li>
+            <li id="b" onclick="funcB()" >B</li>
+            <li id="d" onclick="funcD()" >D</li>
+            <li id="e" onclick="funcE()" >E</li>
+            <li id="f" onclick="funcF()" >F</li>
+            <li id="g" onclick="funcG()" >G</li>
+            <li id="h" onclick="funcH()" >H</li>
+            <li id="i" onclick="funcI()" >I</li>
+            <li id="k" onclick="funcK()" >K</li>
+            <li id="l" onclick="funcL()" >L</li>
+            <li id="m" onclick="funcM()" >M</li>
+            <li id="o" onclick="funcO()" >O</li>
+            <li id="s" onclick="funcS()" >S</li>
+            <li id="t" onclick="funcT()" >T</li>
+            <li id="u" onclick="funcU()" >U</li>
+            <li id="w" onclick="funcW()" >W</li>
+            <li id="y" onclick="funcY()" >Y</li>
+          </ul>
+
+       <div id="display">
+          <p>Come to know about large collection of songs sung by Ellie Goulding.</p>
+          <p>Click on Alphabets to get complete status of songs.</p>
+        </div>
+        </div>
+        <div class="col-1 omit"></div>
+      </div>
+
+
+      <!--FOOTER HERE-->
+
+      <div class="footer">
+        <p>Email : ellie@elliegoulding.com<br />
+           Contact No.: +91022324423<br /><br />Copyright &copy; 2016 Cyberators Inc.
+        </p>
+      </div>
+
+    </body>
+  </html>

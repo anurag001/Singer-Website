@@ -1,0 +1,186 @@
+#r1{
+  	position: relative;
+  	top:100px;
+  }
+
+#r2{
+  	position: relative;
+  	top:120px;
+  	height: 330px;
+  }
+
+#image{
+	position: relative;
+	height: 500px;
+  	padding: 0px;
+}
+
+#image_img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px 2px 15px 2px;
+	/*opacity: 0.7;*/
+}
+
+.links{
+	position: absolute;
+	left: 0px;
+	z-index: 2;
+	padding: 0px;
+	vertical-align: middle;
+	display: inline-block;
+	height: 120px;
+}
+
+.links h3{
+	display: inline-block;
+	color:#fff;
+	border:2px solid #fff;
+	font-family: raleway;
+	font-weight: 200;
+	font-size: 1.6em;
+	padding: 10px;
+	margin: 0px;
+	cursor: pointer;
+	margin: 0px;
+	float: left;
+	margin-top: 25px;
+	width: auto;
+}
+
+.links p{
+	display: inline-block;
+	margin-left: 30px;
+	margin: 0px 0px 0px 20px;
+	float: right;
+	display: none;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+	font-family: raleway;
+	font-size: 1em;
+	color: #454545; 
+	box-shadow: 2px 2px 20px rgb(223,32,8);
+	border-radius: 4px;
+}
+
+.links p img{
+	float: right;
+	margin: 0px;
+	width: 70px;
+	height: 100px;
+	border-radius: 0px;
+	opacity: 1;
+}
+
+.links p span{
+	display: inline-block;
+	max-width: 400px;
+}
+
+#r4{
+	position:relative;
+	top:150px;
+}
+
+#container{
+	background-color: #fff;
+}
+
+#container p{
+	color: #757575;
+	font-family: roboto;
+	font-weight: 200;
+	font-size: 1.2em;
+	display: block;
+	width: 90%;
+    margin: auto;
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+#container img{
+	width:40%;
+	height: auto;
+	float: left;
+	margin: 0px 40px 10px 0px;
+}
+
+#autohide{
+	display: none;
+	margin-top: 50px;
+	width: auto;
+	max-width: 90%;
+	margin: auto;
+}
+
+td, th{
+	padding-top: 15px;	
+}
+
+
+th{
+	font-family: raleway;
+	font-size: 1.5em;
+	color:#555;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+td{
+	color: #757575;
+	font-family: roboto;
+	font-weight: 200;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+#no_hide{
+	margin-top: 50px;
+	width: auto;
+	max-width: 90%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+
+.footer{
+	top:200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.links{
+		display: none;
+	}
+
+	#container p{
+		border-top: 1px solid #ccc;
+	}
+
+	#container img{
+		width:100%;
+	}
+
+	#autohide{
+		display: block;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+	[class *= "col-"]{
+		width:100%;
+	}
+	.omit{
+		width: 0%;
+	}
+
+	#r3{
+		width: 0%;
+	}
+}

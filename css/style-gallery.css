@@ -1,0 +1,150 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper{
+	width:90%;
+	margin: auto;
+	margin-top: 120px;
+	padding: 0px 0px 0px 2px;
+	text-align: center;
+}
+
+#portfolio{
+	list-style-type:none;
+	padding-left:0px;
+	width: 100%;
+	margin: auto;
+}
+#portfolio li{
+	display:inline-block;
+	padding: 0px;
+	margin: 0px;
+	height: 170px;
+	width: 24%;
+	min-width: 250px;
+}
+#portfolio li img{
+	width: 100%;
+	height:170px;
+	cursor: pointer;
+	transition:all 0.3s ease;
+}
+
+#portfolio li img:hover{
+	transform: scale(1.05, 1.05);
+	opacity: 0.7;
+}
+
+
+#overlay{
+	display:none;
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0px;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 100;
+	overflow: scroll;
+	text-align: center;
+}
+
+
+#r1{
+	position: relative;
+	top:100px;
+}
+
+#frame{
+	position: relative;
+	background-color:white;
+	width:70%;
+	text-align: center;
+	height:auto;
+	/*margin-left:-350px;*/
+	margin: 5% auto 22px auto;
+	display:none;
+	cursor: default;
+	z-index: 101;
+}
+
+#frame img{
+			display: inline-block;
+        	width: 100%;
+        	height: 100%;
+        	max-height: 1080px;
+        	max-width: 1920px;
+        	overflow: auto;
+ }
+
+#left{
+            position: absolute;
+            top:45%;
+            font-size: 3em;
+            text-decoration: none;
+            color:#fff;
+            background: rgba(0,0,0,0.3);
+            padding: 5px;
+            z-index:2;
+			cursor:pointer;
+			padding-right: 10px;
+			margin: 0px;
+			left:0px;
+            border-left: 3px solid #fff;
+}
+#right{
+            position: absolute;
+            top:45%;
+            font-size: 3em;
+            text-decoration: none;
+            color:#fff;
+            background: rgba(0,0,0,0.5);
+            padding: 5px;
+            z-index:2;
+			cursor:pointer;
+			padding-left: 10px;
+			margin: 0px;
+            right:0px;
+            border-right: 3px solid #fff;
+}
+
+
+#close{
+	position: fixed;
+	top: 0px;
+	right: 20px;
+	font-size: 1.4em;
+	text-decoration: underline;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.footer{
+	top:50px;
+}
+
+@media only screen and (max-width: 900px){
+	#frame{
+		width:80%;
+		margin-top: 10%;
+	}
+
+
+}
+
+@media only screen and (max-width: 700px){
+
+	#frame{
+		width: 90%;
+		margin-top: 35%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 700px){
+	#frame{
+		width: 98%;
+	}
+}

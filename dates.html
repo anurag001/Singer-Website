@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+    <head>
+      <meta charset = "utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ellie Goulding - Tour Dates</title>
+      <link rel="stylesheet" type="text/css" href="./css/style.css" />
+      <style type="text/css">
+        #r1{
+        	position: relative;
+        	top:100px;
+        }
+
+        #r2{
+        	position: relative;
+        	top: 120px;
+        	text-align: center;
+        	background-color: transparent;
+        }
+
+        table{
+        	width: 100%;
+        	text-align: center;
+        	margin: 0px;
+        	background-color: #fff;
+        	padding: 20px;
+        }
+
+        tr{
+        	display: inline-block;
+        	border-bottom: 2px solid #F23B69;
+        	margin-top:20px; 
+        	width: 100%;
+        	background: #fcfcfc;
+        }
+
+        td, th{
+        	margin: 20px;
+        }
+
+        td{
+        	float: left;
+        	padding: 10px;
+        	font-family: roboto;
+        	font-weight: 200;
+        	font-size: 1.3em;
+        	color: #656565;
+        	width: 30%;
+        	min-width: 200px;
+        }
+
+        th{
+        	font-family: roboto;
+        	font-size: 1.3em;
+        	color: #454545;
+        }
+
+
+        .footer{
+        	position: relative;
+        	top:155px;
+        }
+
+  @media only screen and (max-width:768px){
+
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;}
+
+        .omit{
+        	width: 0px;
+        	padding: 0px;
+        }
+
+        table{
+        	margin: 0;
+        	padding: 0px;
+        }
+
+        #r2 div{
+        	padding: 0;
+        }
+  }
+
+   @media only screen and (max-width:768px){
+   	 td, th{
+   	 	font-size: 1em;
+   	 }
+   }
+      </style>
+      <script type="text/javascript" src="./scripts/main.js"></script>
+    </head>
+
+    <body>
+
+      <!--HEADER GOES HERE-->
+
+      <div id="header">
+       <div id="nav_button" onclick="myFunc()">
+            <div style="top:10px;" id="1"></div>
+            <div style="top:25px;" id="2"></div>
+            <div style="top:40px;" id="3"></div>
+        </div>
+        <p></p>
+         <div id="logo_small"></div>
+      </div>
+
+      <!--NAVIGATION MENU-->
+
+       <div id="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" >The Person</a></li>
+          <li><a href="./listen.html" >Listen</a></li>
+          <li><a href="./dates.html" >Tour Dates</a></li>
+          <li><a href="./gallery.html" >Gallery</a></li>
+        </ul>
+      </div>
+      <div id="trans_bg" onclick="myFunc()"></div>
+
+      <!--HEADING-->
+
+      <div class="rows" id="r1">
+        <div class="col-2 omit"></div>
+        <div class="col-10"><h1 style="color:#fff; margin:5px;">TOUR DATES</h1></div>
+      </div>
+
+      <!--FULL EVENT LIST-->
+
+      <div class="rows" id="r2">
+        <div class="col-1 omit"></div>
+        <div class="col-10 col-m-12">
+        	<table>
+        	  <tr>
+        	    <th>25 FEB</th>
+        	    <td class="venue">ZÉNITH DE PARIS</td>
+        	    <td class="city">PARIS, FRANCE</td>
+        	  </tr>
+        	   <tr>
+        	    <th>26 FEB</th>
+        	    <td class="venue">KÖNIG PILSENER ARENA</td>
+        	    <td class="city">OBERHAUSEN, GERMANY</td>
+        	  </tr>
+        	   <tr>
+        	    <th>28 FEB</th>
+        	    <td class="venue">HALLENSTADION</td>
+        	    <td class="city">ZÜRICH, SWITZERLAND</td>
+        	  </tr>
+        	   <tr>
+        	    <th>29 FEB</th>
+        	    <td class="venue">ROCKHAL</td>
+        	    <td class="city">ESCH SUR ALZETTE, LUX</td>
+        	  </tr>
+        	   <tr>
+        	    <th>03 MAR</th>
+        	    <td class="venue">ERICSSON GLOBE ARENA</td>
+        	    <td class="city">STOCKHOLM, SWEDEN</td>
+        	  </tr>
+        	   <tr>
+        	    <th>04 MAR</th>
+        	    <td class="venue">TELENOR ARENA</td>
+        	    <td class="city">OSLO, NORWAY</td>
+        	  </tr>
+        	   <tr>
+        	    <th>05 MAR</th>
+        	    <td class="venue">THE FORUM</td>
+        	    <td class="city">COPENHAGEN, DENMARK</td>
+        	  </tr>
+        	   <tr>
+        	    <th>08 MAR</th>
+        	    <td class="venue">MOTORPOINT ARENA</td>
+        	    <td class="city">CARDIFFCARDIFF, UK</td>
+        	  </tr>
+        	   <tr>
+        	    <th>10 MAR</th>
+        	    <td class="venue">ECHO ARENA</td>
+        	    <td class="city">LIVERPOOL, UK</td>
+        	  </tr>
+        	   <tr>
+        	    <th>12 MAR</th>
+        	    <td class="venue">MOTORPOINT ARENA</td>
+        	    <td class="city">SHEFFIELD, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>13 MAR</th>
+        	    <td class="venue">CAPITAL FM ARENA</td>
+        	    <td class="city">NOTTINGHAM, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>15 MAR</th>
+        	    <td class="venue">FIRST DIRECT ARENA</td>
+        	    <td class="city">LEEDS, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>16 MAR</th>
+        	    <td class="venue">METRO RADIO ARENA</td>
+        	    <td class="city">NEWCASTLE UPON TYNE, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>18 MAR</th>
+        	    <td class="venue">THE SSE HYDRO</td>
+        	    <td class="city">GLASGOW, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>19 MAR</th>
+        	    <td class="venue">MANCHESTER ARENA</td>
+        	    <td class="city">MANCHESTER, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>21 MAR</th>
+        	    <td class="venue">BARCLAYCARD ARENA</td>
+        	    <td class="city">BIRMINGHAM, UK</td>
+        	  </tr>
+        	  <tr>
+        	    <th>24 MAR</th>
+        	    <td class="venue">THE O2 ARENA</td>
+        	    <td class="city">LONDON, UK</td>
+        	  </tr>
+        	</table>
+        </div>
+        <div class="col-1 omit"></div>
+      </div>
+
+      <!--FOOTER HERE-->
+
+      <div class="footer">
+        <p>Email : ellie@elliegoulding.com<br />
+           Contact No.: +91022324423<br /><br />Copyright &copy; 2016 Cyberators Inc.
+        </p>
+      </div>
+
+
+    </body>
+
+  </html>
